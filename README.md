@@ -17,5 +17,19 @@ optional arguments:
   --attachment ATTACHMENT, -a ATTACHMENT
   --type TYPE, -t TYPE
 
+Sample:
+
+python pymailcli.py --recipient 'johndoe@gmail.com' --body 'Hello world!' --subject 'Test email' --attachment '/root/Pictures/indie4.jpg' --type 'image'
 
 As of now, --type only includes image, but soon I'll be adding support for audio and other file types for attachment.
+
+You need to add these environment variables in your ~/.bashrc or ~/.bash_profile configuration:
+
+export EMAIL_HOST='smtp.gmail.com'
+export EMAIL_PORT=587
+export USERNAME='<gmail username>'
+export PASSWORD='<gmail password>'
+
+You can use another email service provider like Yahoo, MSN, etc. Just make sure to swap these variables with the correct host, port, username, and password configuration. Also, ensure that your bash config file has been loaded to the shell after editing it. You can run . ~/.bashrc or . ~/.bash_profile.
+
+If you go with gmail, please ensure that you allow less secure apps: https://support.google.com/accounts/answer/6010255?hl=en.
