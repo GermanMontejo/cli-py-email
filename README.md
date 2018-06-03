@@ -21,7 +21,7 @@ Sample:
 
 python pymailcli.py --recipient 'johndoe@gmail.com' --body 'Hello world!' --subject 'Test email' --attachment '/root/Pictures/indie4.jpg' --type 'image'
 
-As of now, --type only includes image, but soon I'll be adding support for audio and other file types for attachment.
+As of now, --type only includes images, but soon I'll be adding support for audio and other file types for attachment.
 
 You need to add these environment variables in your ~/.bashrc or ~/.bash_profile configuration:
 
